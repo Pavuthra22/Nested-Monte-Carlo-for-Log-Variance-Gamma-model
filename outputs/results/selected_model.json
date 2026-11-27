@@ -1,0 +1,28 @@
+{
+  "selected_model": "mlp_128_128_64_32",
+  "selection_rule": "Plus faible RMSE sur validation (le test n'intervient pas dans la sélection).",
+  "architectures": {
+    "mlp_128_128_128_128": [
+      128,
+      128,
+      128,
+      128
+    ],
+    "mlp_128_128_64": [
+      128,
+      128,
+      64
+    ],
+    "mlp_128_128_64_32": [
+      128,
+      128,
+      64,
+      32
+    ],
+    "mlp_128_128_64_contraint": [
+      128,
+      128,
+      64
+    ]
+  }
+}

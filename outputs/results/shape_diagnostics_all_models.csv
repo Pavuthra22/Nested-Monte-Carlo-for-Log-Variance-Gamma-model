@@ -1,0 +1,5 @@
+model,T_violations,K_violations,convexite_violations,T_intervalles,K_intervalles,convexite_points,T_taux_violations,K_taux_violations,convexite_taux_violations
+mlp_128_128_128_128,0,0,338,1428,1428,1416,0.0,0.0,0.2387005649717514
+mlp_128_128_64,0,0,326,1428,1428,1416,0.0,0.0,0.23022598870056496
+mlp_128_128_64_32,0,0,269,1428,1428,1416,0.0,0.0,0.1899717514124294
+mlp_128_128_64_contraint,0,0,165,1428,1428,1416,0.0,0.0,0.11652542372881355
