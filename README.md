@@ -30,13 +30,13 @@ L'entraînement et les analyses Python peuvent être exécutés sur CPU ou sur G
 
 Si les fichiers `data/entree.csv` et `data/sorties.csv` sont déjà disponibles, passer directement à l'étape 4.
 
-Générer les 100 000 jeux de paramètres :
+Afin de générer les 100 000 jeux de paramètres, executer la comande suivante depuis la racine :
 
 ```bash
 python data/generer_entrees.py data/entree.csv
 ```
 
-Compiler et exécuter la simulation Monte Carlo :
+Compiler et exécuter la simulation Monte Carlo afin d'obtenir les prix :
 
 ```bash
 cd monte_carlo
@@ -49,7 +49,7 @@ Les prix et leurs intervalles de confiance à 95 % sont enregistrés dans `data/
 
 ## 4. Entraînement des réseaux de neurones
 
-Depuis la racine du projet :
+Depuis la racine du projet, faites :
 
 ```bash
 python -m neural_network.train
@@ -57,7 +57,7 @@ python -m neural_network.train
 
 Les données sont réparties en trois ensembles : entraînement (70 %), validation (15 %) et test (15 %), avec des proportions approximatives.
 
-Quatre architectures MLP sont comparées : `128-128-128-128`, `128-128-64`, `128-128-64-32` et `128-128-64` avec pénalités financières. Le meilleur modèle est sélectionné selon la RMSE sur l'ensemble de validation.
+Quatre architectures MLP avec des couches différentes sont comparées : `128-128-128-128`, `128-128-64`, `128-128-64-32` et `128-128-64` avec pénalités financières. Le meilleur modèle est sélectionné selon la RMSE sur l'ensemble de validation.
 
 Les modèles, les paramètres de normalisation et les historiques sont sauvegardés automatiquement dans `outputs/`.
 
